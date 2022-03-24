@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #575455;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 32px;
+}
+h1, h2, h3 {
+	color: #000;
+}
+h1{
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 82.5px;
+}
+h2{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 54px;
+	padding-bottom: 20px;
+}
+h3{
+	font-size: 20px;
+	font-weight: 600;
+}
+h4{
+	color: #F75C4E;
+	line-height: 24px;
+}
+/* button get started */
+.btn {
+	background-color: #1F7CFF;
+  	border-radius: 50px 50px;
+  	color: #ffffff	 ;
+  	padding: 12px 40px;
+  	text-align: center;
+  	text-decoration: none;
+	border-style: none;
+  	display: inline-block;
+  	font-size: 16px;
+	  line-height: 24px;
+  	cursor: pointer;
+	letter-spacing: 1px;
+}
+/* CSS header */
+header{
+	display: flex;
+	padding-top: 40px;
+}
+.hleft{
+	width: 25%;
+}
+.hmid {
+	width: 50%;
+}
+.hright{
+	width: 25%;
+	text-align: right;
+	margin-right:100px;
+}
+.hleft .logo {
+	margin-left: 100px;
+}
+ul.main-mn {
+	text-align: center;
+}
+.main-mn li {
+	display: inline-block;
+	margin: 0px 20px;
+	line-height: 40px;
+}
+.main-mn a {
+	text-decoration: none;
+	display: block;
+	color: #070F18;
+} 
+.main-mn li:active {
+	font-weight: 600;
+}
+.hright .btn-signin{
+	background-color: #F5F6FB !important;
+  	color: #070F18	 ;
+}
+/* CSS body */
+/* Chia col */
+.row .col-5 {
+	width: 50%;
+}
+.row .col-4 {
+	width: 40%;
+}
+.row .col-6 {
+	width: 60%;
+}
+.row .col-3{
+	width: 30%;
+}
+.row .col-7{
+	width: 70%;
+}
+.row .col-33{
+	width: 33.333%;
+}
+/* ----------------- */
+.container{
+	padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+	padding-top: 90px;	
+}
+.container .row{
+	display: flex;
+}
+/* CSS section manage */
+.companies{
+	padding-top: 150px;
+}
+.brand{
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+.brand img {
+	height: 30px;
+}
+.hihi{
+	padding-left: 200px;
+}
+.img-manage1 {
+	margin-top: -290px;
+    margin-left: -120px;
+}
+.img-manage2 {
+	margin-top: -250px;
+    margin-left: 360px;
+}
+/* CSS section business  */
+.row .col-33 .content{
+	padding: 30px 20px
+}
+.row .col-33 .business-content{
+	padding-left: 25px;
+} 
+.center{
+	text-align: center;
+	display: block !important;
+	padding-bottom: 60px;
+}
+/* CSS boost */
+.pad{
+	padding: 100px 50px 100px 100px;
+}
+.boost{
+	padding-bottom: 60px;
+}	
+#email {
+	width: 65%;	
+	text-align: left  !important;
+	background-color: #F5F6FB !important;
+	border-radius: 50px 0 0 50px;
+	padding-left: 25px;
+	box-shadow: none !important;
+}
+#submit {
+	width: 35%;
+	margin-left: -15px;
+}
+/* CSS tablet */
+@media screen and (max-width: 992px) {
+	.hleft, .hright{
+		width: 50% !important;
+	}
+	.hleft .logo {
+		margin-left: 30px;
+	}
+	.hright{
+		margin-right: 30px;
+	}
+	.hmid, .hihi{
+		display: none;
+	}
+	.container{
+		width: 100%;
+		padding-left: 35px;
+		padding-right: 35px;
+		padding-top: 30px;
+	}
+	.container .row {
+		width: 100% !important;
+		display: block;
+	}
+	.row .col-4,.row .col-3,.row .col-6,.row .col-7,.row .col-5, .row .col-33{
+		width: 100%;
+	}
+	.row .col-33{
+		display: flex;
+	}
+	.manage .col-4, .trustby, .boost .row{
+		text-align: center;
+	}
+	.companies{
+		padding-top: 50px;
+	}
+	.trustby br{
+		display: none;
+	}
+	.brand{
+		text-align: center;
+		margin-left: 0;
+	}
+	.content{
+		display: flex !important;
+	}
+	.pad{
+		padding: 30px 0;
+		text-align: center;
+	}
+  }
+
+/* CSS mobile */
+@media screen and (max-width: 600px) {
+	html{
+		display: flex;
+	}
+	.hleft{
+		width: 100% !important;
+	}
+	.hright{
+		display: none;
+	}
+	/* .companies{
+		padding-top: 50px;
+	} */
+	.trustby{
+		text-align: left;
+	}
+	.brand{
+		display: block;
+		margin-left: 0px;
+		text-align: left;
+		flex-wrap: wrap;
+    	flex-direction: row;
+	}
+	.brand img {
+		height: 45px;
+    	margin-right: 20px;
+    	margin-top: 20px
+	}
+	.business .col-33{
+		display: block;
+	}
+	
+}
